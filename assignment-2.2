@@ -1,0 +1,22 @@
+ASSIGNMENT 2.2
+
+
+(1) Read multiple JSON files into a directory to convert into a dataset.
+I have files text1, text2, text3 in the directory JS(ON.
+                                                     
+library(rjson)
+filenames <- list.files("F:/workings/JSON", pattern="*.json", full.names=TRUE)
+MYJSON=lapply(filenames, function(x) fromJSON(file=x))
+
+
+(2) Parse the following JSON into a data frame.
+
+JS=data.frame('{"Name":JSON, "releaving date":"2011_09_16", 
+              "SalaryCertificate":"from3(2011)", "opening_weekend_take":1234, 
+              "year":2011, "release_date_wide":"2011_09_16", "gross":"salary59954"}')
+
+
+
+
+
+
