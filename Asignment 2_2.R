@@ -1,6 +1,7 @@
+1. Read multiple JSON files into a directory to convert into a dataset.
+I have files text1, text2, text3 in the directory JSON.
 
 library(rjson)
-
 
 library(jsonlite)
 
@@ -29,4 +30,12 @@ Ans.
 js_data1<- fromJSON(file="test.json")
 json_df_test <-as.data.frame(js_data1)
 View(js_data1)
+
+3. Write a script for Variable Binning using R.
+
+set.seed(100)
+rpois(100,10)
+range(rpois(100,10))
+cut(rpois(100,10),range(rpois(100,10)))
+pretty(rpois(100,10))
 
